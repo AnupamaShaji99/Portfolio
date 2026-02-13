@@ -11,7 +11,7 @@ Public transport Patronage Recovery in Post-Covid Victoria:
  
  3.Applying data storytelling principles to refine insights based on stakeholder feedback.
 
- [Publication](https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes)
+ [Public Transport Patronage in Post-COVID Victoria](https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes)
 
 
 
