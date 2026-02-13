@@ -15,7 +15,8 @@ I’m a data analyst, experienced in SQL-driven analysis and building Power BI/T
 - Found recovery is strongest on weekends and weakest on weekdays, suggesting reduced routine commuting  
 - Highlighted implications for demand-aligned, mode-specific service planning
 
-🔗 🔗 **View the interactive dashboard: [Public Transport Patronage in Post-COVID Victoria](https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes)**
+🔗 🔗 🔗 **View the interactive dashboard: [Public Transport Patronage in Post-COVID Victoria](https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes)**
+
 
 ---
 
