@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>Anupama Shaji | Data Analytics Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Anupama Shaji | Data Analytics Portfolio</title>
 
-        body{
-            font-family: Arial, sans-serif;
-            background:#f5f7fa;
-            margin:0;
-            padding:0;
-            color:#333;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
 
-        .container{
-            width:80%;
-            margin:auto;
-            padding:40px;
-        }
+h1 {
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
 
-        h1{
-            color:#1f4e79;
-        }
+h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+}
 
-        .card{
-            background:white;
-            padding:25px;
-            margin-top:25px;
-            border-radius:12px;
-            box-shadow:0 2px 10px rgba(0,0,0,0.08);
-        }
+.card {
+    background: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        .skills{
-            background:white;
-            padding:20px;
-            border-radius:12px;
-            margin-top:25px;
-            box-shadow:0 2px 10px rgba(0,0,0,0.08);
-        }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
 
-    </style>
+.project-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-link:hover {
+    color: #1f4e79;
+}
+
+.view-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.view-button:hover {
+    background-color: #163a5a;
+}
+</style>
 
 </head>
 
 <body>
-
-<div class="container">
 
 <h1>Anupama Shaji</h1>
 
@@ -63,57 +93,71 @@ I develop data-driven solutions that transform raw data into actionable business
 
 <div class="card">
 
+<a href="Transport dashboard.png" target="_blank">
 <img src="Transport dashboard.png"
      alt="Transport Dashboard"
-     style="width:350px;
-            height:200px;
-            object-fit:cover;
-            border-radius:8px;
-            margin-bottom:15px;">
-<h3>🚋 Public Transport Patronage Recovery in Post-COVID Victoria</h3>
+     class="project-image">
+</a>
+
+<h3>
+<a href="Transport dashboard.png"
+   target="_blank"
+   class="project-link">
+🚆 Public Transport Patronage Recovery in Post-COVID Victoria
+</a>
+</h3>
 
 <p>
 Analysed public transport recovery patterns to understand how travel behaviour changed after COVID and identify implications for service planning.
 </p>
 
 <p>
-<b>Tools:</b> Tableau, SQL, Excel
+<strong>Tools:</strong> Tableau, SQL, Excel
 </p>
+
+<a href="Transport dashboard.png"
+target="_blank"
+class="view-button">
+View Dashboard </a>
 
 </div>
 
 <div class="card">
-<img src="abn data quality.png"
-     alt="abn data quality"
-     style="width:350px;
-            height:200px;
-            object-fit:cover;
-            border-radius:8px;
-            margin-bottom:15px;">
 
-<h3>📊 ABN Data Quality Assessment</h3>
+<a href="abn data quality.png" target="_blank">
+<img src="abn data quality.png"
+     alt="ABN Dashboard"
+     class="project-image">
+</a>
+
+<h3>
+<a href="abn data quality.png"
+   target="_blank"
+   class="project-link">
+📊 ABN Data Quality Assessment
+</a>
+</h3>
 
 <p>
 Assessed postcode validity, completeness and state-level distribution to evaluate data quality prior to reporting and analysis.
 </p>
 
 <p>
-<b>Tools:</b> Power BI, DAX, Excel
+<strong>Tools:</strong> Power BI, DAX, Excel
 </p>
 
-</div>
+<a href="abn data quality.png"
+target="_blank"
+class="view-button">
+View Dashboard </a>
 
-<div class="skills">
+</div>
 
 <h2>Skills</h2>
 
 <p>
 SQL • Power BI • Tableau • Excel • Python • Data Storytelling
 </p>
-
-</div>
-
-</div>
 
 </body>
 </html>
