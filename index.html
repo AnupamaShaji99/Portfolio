@@ -1,5 +1,5 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -17,11 +17,17 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 40px;
+    line-height: 1.6;
 }
 
 h1 {
     color: #1f4e79;
-    margin-bottom: 10px;
+    margin: 0;
+}
+
+h2 {
+    color: #1f4e79;
+    margin-top: 40px;
 }
 
 .intro {
@@ -30,7 +36,7 @@ h1 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
     margin-top: 25px;
 }
@@ -42,6 +48,7 @@ h1 {
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -85,9 +92,25 @@ h1 {
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1f4e79;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 900px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 20px;
     }
 }
 
@@ -99,16 +122,23 @@ h1 {
 
 <div class="intro">
 
-<h1>Hi 👋 </h1>
-<h1> I'm Anupama</h1>
+    <h1>Hi 👋</h1>
+    <h1>I'm Anupama</h1>
 
-<p>
-Power BI • SQL • Tableau • Business Analysis
-</p>
+    <p>
+        Power BI • SQL • Tableau • Business Analysis
+    </p>
 
-<p>
-I develop data-driven solutions that transform raw data into actionable business insights and impactful visual stories.Check out this page for a deep dive into my works!!
-</p>
+    <p>
+        I develop data-driven solutions that transform raw data into actionable business insights and impactful visual stories.
+        Explore my portfolio below for a deeper look at my analytics projects.
+    </p>
+
+    <a href="https://github.com/YOURUSERNAME"
+       target="_blank"
+       class="github-link">
+       View My GitHub Profile
+    </a>
 
 </div>
 
@@ -116,108 +146,134 @@ I develop data-driven solutions that transform raw data into actionable business
 
 <div class="projects-grid">
 
-<a href="https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes" target="_blank" class="project-link">
+    <!-- Project 1 -->
 
-<div class="card">
+    <a href="#"
+       target="_blank"
+       class="project-link">
 
-    <a href="#" target="_blank" class="project-link">
+        <div class="card">
 
-<div class="card">
+            <img src="student_followup_dashboard.png"
+                 alt="Student Follow-Up Prioritisation Dashboard"
+                 class="project-image">
 
-<img src="student_followup_dashboard.png"
-alt="Student Follow-Up Prioritisation Dashboard"
-class="project-image">
+            <h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
 
-<h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
+            <p>
+                Developed an end-to-end analytics solution to identify workload drivers,
+                progression barriers and students at risk of stalling during the enrolment lifecycle.
+                Built an interactive Power BI dashboard supported by SQL analysis and predictive modelling in Python.
+            </p>
 
-<p>
-Developed an end-to-end analytics solution to identify workload drivers, progression barriers and students at risk of stalling during the enrolment lifecycle. Built an interactive Power BI dashboard supported by SQL analysis and predictive modelling in Python.
-</p>
+            <p>
+                <strong>Key Finding:</strong> T1 Enrolment generated the highest follow-up workload,
+                while applicants demonstrated the lowest progression rates. Progression outcomes
+                declined significantly after multiple contact attempts.
+            </p>
 
-<p>
-<strong>Key Finding:</strong> T1 Enrolment generated the highest follow-up workload, while applicants demonstrated the lowest progression rates. Progression outcomes declined significantly after multiple contact attempts.
-</p>
+            <p>
+                <strong>Tools:</strong> Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
+            </p>
 
-<p>
-<strong>Tools:</strong> Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
-</p>
+            <span class="view-button">
+                Coming Soon →
+            </span>
 
-<span class="view-button">
-View Project →
-</span>
+        </div>
 
-</div>
+    </a>
 
-</a>
+    <!-- Project 2 -->
 
+    <a href="https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes"
+       target="_blank"
+       class="project-link">
 
-<img src="Transport dashboard.png"
-  alt="Transport Dashboard"
-  class="project-image">
+        <div class="card">
 
-<h3>🚆 Public Transport Patronage Recovery in Post-COVID Victoria</h3>
+            <img src="Transport dashboard.png"
+                 alt="Transport Dashboard"
+                 class="project-image">
 
-<p>
-Analysed Victorian public transport demand from 2018–2025 to understand how travel behaviour changed after COVID and identify implications for future service planning.
-</p>
+            <h3>🚆 Public Transport Patronage Recovery in Post-COVID Victoria</h3>
 
-<p>
-<strong>Key Finding:</strong> Public transport usage stabilised at approximately 84% of pre-COVID levels, with weekend travel recovering more strongly than weekday commuting.
-</p>
+            <p>
+                Analysed Victorian public transport demand from 2018–2025 to understand
+                how travel behaviour changed after COVID and identify implications for future service planning.
+            </p>
 
-<p>
-<strong>Tools:</strong> Tableau, SQL, Excel
-</p>
+            <p>
+                <strong>Key Finding:</strong> Public transport usage stabilised at approximately
+                84% of pre-COVID levels, with weekend travel recovering more strongly than weekday commuting.
+            </p>
 
-<span class="view-button">
-View Dashboard →
-</span>
+            <p>
+                <strong>Tools:</strong> Tableau, SQL, Excel
+            </p>
 
-</div>
+            <span class="view-button">
+                View Dashboard →
+            </span>
 
-</a>
+        </div>
 
-<a href="abn data quality.png" target="_blank" class="project-link">
+    </a>
 
-<div class="card">
+    <!-- Project 3 -->
 
-<img src="abn data quality.png"
-  alt="ABN Dashboard"
-  class="project-image">
+    <a href="abn data quality.png"
+       target="_blank"
+       class="project-link">
 
-<h3>📊 ABN Data Quality & Reporting Readiness Assessment</h3>
+        <div class="card">
 
-<p>
-Transformed large-scale XML business registry data into a reporting-ready dataset and assessed postcode completeness, validity and geographic coverage.
-</p>
+            <img src="abn data quality.png"
+                 alt="ABN Dashboard"
+                 class="project-image">
 
-<p>
-<strong>Key Finding:</strong> Approximately 30% of analysed records contained missing postcode information, highlighting risks for location-based reporting.
-</p>
+            <h3>📊 ABN Data Quality & Reporting Readiness Assessment</h3>
 
-<p>
-<strong>Tools:</strong> Power BI, Power Query, DAX, XML
-</p>
+            <p>
+                Transformed large-scale XML business registry data into a reporting-ready dataset
+                and assessed postcode completeness, validity and geographic coverage.
+            </p>
 
-<span class="view-button">
-View Dashboard →
-</span>
+            <p>
+                <strong>Key Finding:</strong> Approximately 30% of analysed records contained missing
+                postcode information, highlighting risks for location-based reporting.
+            </p>
 
-</div>
+            <p>
+                <strong>Tools:</strong> Power BI, Power Query, DAX, XML
+            </p>
 
-</a>
+            <span class="view-button">
+                View Dashboard →
+            </span>
+
+        </div>
+
+    </a>
 
 </div>
 
 <div class="skills">
 
-<h2>Skills</h2>
+    <h2>Skills</h2>
 
-<p>
-SQL • Power BI • Tableau • Excel • Power Query • DAX • Data Quality Assessment • Business Analysis • Data Storytelling
-</p>
+    <p>
+        SQL • Power BI • Tableau • Excel • Power Query • DAX • Python • Pandas •
+        Scikit-Learn • Data Quality Assessment • Business Analysis • Data Storytelling
+    </p>
 
 </div>
 
 </body>
 </html>
+```
+
+  
+ 
+
+
