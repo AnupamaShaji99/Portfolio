@@ -34,10 +34,7 @@ h2 {
     margin-bottom: 40px;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
+.project-container {
     margin-top: 25px;
 }
 
@@ -47,8 +44,6 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 .card:hover {
@@ -68,7 +63,7 @@ h2 {
 
 .project-image {
     width: 100%;
-    height: 220px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -105,12 +100,13 @@ h2 {
 }
 
 @media (max-width: 900px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
 
     body {
         padding: 20px;
+    }
+
+    .project-image {
+        height: auto;
     }
 }
 
@@ -126,15 +122,15 @@ h2 {
     <h1>I'm Anupama</h1>
 
     <p>
-        Power BI • SQL • Tableau • Business Analysis
+        Power BI • SQL • Python • Tableau • Business Analysis
     </p>
 
     <p>
         I develop data-driven solutions that transform raw data into actionable business insights and impactful visual stories.
-        Explore my portfolio below for a deeper look at my analytics projects.
+        My work focuses on analytics, business intelligence and data-driven decision making.
     </p>
 
-    <a href="https://github.com/YOURUSERNAME"
+    <a href="https://github.com/anupamashaji99"
        target="_blank"
        class="github-link">
        View My GitHub Profile
@@ -142,119 +138,53 @@ h2 {
 
 </div>
 
-<h2>Featured Projects</h2>
+<h2>Featured Project</h2>
 
-<div class="projects-grid">
+<div class="project-container">
 
-    <!-- Project 1 -->
+<a href="https://github.com/anupamashaji99/Student-Follow-Up-Prioritisation-Enrolment-Support-Analytics"
+   target="_blank"
+   class="project-link">
 
-    <a href="#"
-       target="_blank"
-       class="project-link">
+    <div class="card">
 
-        <div class="card">
+        <img src="student_followup_dashboard.png"
+             alt="Student Follow-Up Prioritisation Dashboard"
+             class="project-image">
 
-            <img src="student_followup_dashboard.png"
-                 alt="Student Follow-Up Prioritisation Dashboard"
-                 class="project-image">
+        <h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
 
-            <h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
+        <p>
+            Inspired by my experience supporting student conversion processes, this project combines
+            SQL analysis, Power BI visualisation and predictive modelling to identify progression barriers,
+            workload drivers and students requiring prioritised follow-up support.
+        </p>
 
-            <p>
-                Developed an end-to-end analytics solution to identify workload drivers,
-                progression barriers and students at risk of stalling during the enrolment lifecycle.
-                Built an interactive Power BI dashboard supported by SQL analysis and predictive modelling in Python.
-            </p>
+        <p>
+            <strong>Business Problem:</strong>
+            Student conversion teams manage large applicant pipelines and must prioritise follow-up
+            activities effectively. This project provides insights into progression patterns and
+            supports data-driven intervention strategies.
+        </p>
 
-            <p>
-                <strong>Key Finding:</strong> T1 Enrolment generated the highest follow-up workload,
-                while applicants demonstrated the lowest progression rates. Progression outcomes
-                declined significantly after multiple contact attempts.
-            </p>
+        <p>
+            <strong>Key Findings:</strong>
+            T1 Enrolment generated the highest follow-up workload, applicants demonstrated the lowest
+            progression rates, and progression outcomes declined significantly after repeated contact attempts.
+        </p>
 
-            <p>
-                <strong>Tools:</strong> Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
-            </p>
+        <p>
+            <strong>Tools:</strong>
+            Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
+        </p>
 
-            <span class="view-button">
-                Coming Soon →
-            </span>
+        <span class="view-button">
+            View Case Study →
+        </span>
 
-        </div>
+    </div>
 
-    </a>
-
-    <!-- Project 2 -->
-
-    <a href="https://public.tableau.com/app/profile/anupama.shaji/viz/FINALSUBMISSION_PUBLICTRANSPORTPATRONAGEINPOST-COVIDVICTORIA_DASHBOARD/Dashboard1?publish=yes"
-       target="_blank"
-       class="project-link">
-
-        <div class="card">
-
-            <img src="Transport dashboard.png"
-                 alt="Transport Dashboard"
-                 class="project-image">
-
-            <h3>🚆 Public Transport Patronage Recovery in Post-COVID Victoria</h3>
-
-            <p>
-                Analysed Victorian public transport demand from 2018–2025 to understand
-                how travel behaviour changed after COVID and identify implications for future service planning.
-            </p>
-
-            <p>
-                <strong>Key Finding:</strong> Public transport usage stabilised at approximately
-                84% of pre-COVID levels, with weekend travel recovering more strongly than weekday commuting.
-            </p>
-
-            <p>
-                <strong>Tools:</strong> Tableau, SQL, Excel
-            </p>
-
-            <span class="view-button">
-                View Dashboard →
-            </span>
-
-        </div>
-
-    </a>
-
-    <!-- Project 3 -->
-
-    <a href="abn data quality.png"
-       target="_blank"
-       class="project-link">
-
-        <div class="card">
-
-            <img src="abn data quality.png"
-                 alt="ABN Dashboard"
-                 class="project-image">
-
-            <h3>📊 ABN Data Quality & Reporting Readiness Assessment</h3>
-
-            <p>
-                Transformed large-scale XML business registry data into a reporting-ready dataset
-                and assessed postcode completeness, validity and geographic coverage.
-            </p>
-
-            <p>
-                <strong>Key Finding:</strong> Approximately 30% of analysed records contained missing
-                postcode information, highlighting risks for location-based reporting.
-            </p>
-
-            <p>
-                <strong>Tools:</strong> Power BI, Power Query, DAX, XML
-            </p>
-
-            <span class="view-button">
-                View Dashboard →
-            </span>
-
-        </div>
-
-    </a>
+</a>
 
 </div>
 
@@ -263,17 +193,14 @@ h2 {
     <h2>Skills</h2>
 
     <p>
-        SQL • Power BI • Tableau • Excel • Power Query • DAX • Python • Pandas •
+        SQL • Power BI • Python • Tableau • Excel • Power Query • DAX • Pandas •
         Scikit-Learn • Data Quality Assessment • Business Analysis • Data Storytelling
     </p>
 
 </div>
 
 </body>
+
 </html>
 ```
-
-  
- 
-
 
