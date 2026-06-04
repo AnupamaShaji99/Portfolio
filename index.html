@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,22 +20,18 @@ body {
     line-height: 1.6;
 }
 
-h1 {
+h1,h2 {
     color: #1f4e79;
-    margin: 0;
-}
-
-h2 {
-    color: #1f4e79;
-    margin-top: 40px;
 }
 
 .intro {
     margin-bottom: 40px;
 }
 
-.project-container {
-    margin-top: 25px;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
 }
 
 .card {
@@ -54,16 +50,11 @@ h2 {
 .project-link {
     text-decoration: none;
     color: inherit;
-    display: block;
-}
-
-.project-link:hover {
-    color: inherit;
 }
 
 .project-image {
     width: 100%;
-    height: 350px;
+    height: 280px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -105,8 +96,8 @@ h2 {
         padding: 20px;
     }
 
-    .project-image {
-        height: auto;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -118,89 +109,200 @@ h2 {
 
 <div class="intro">
 
-    <h1>Hi 👋</h1>
-    <h1>I'm Anupama</h1>
+<h1>Hi 👋</h1>
+<h1>I'm Anupama Shaji</h1>
 
-    <p>
-        Power BI • SQL • Python • Tableau • Business Analysis
-    </p>
+<p>
+Aspiring Data Analyst with experience in SQL, Power BI, Python, Tableau and Business Intelligence.
+</p>
 
-    <p>
-        I develop data-driven solutions that transform raw data into actionable business insights and impactful visual stories.
-        My work focuses on analytics, business intelligence and data-driven decision making.
-    </p>
+<p>
+I develop data-driven solutions that transform raw data into actionable insights through analytics,
+dashboard development, predictive modelling and data storytelling.
+</p>
 
-    <a href="https://github.com/anupamashaji99"
-       target="_blank"
-       class="github-link">
-       View My GitHub Profile
-    </a>
+<a href="https://github.com/anupamashaji99"
+   target="_blank"
+   class="github-link">
+   View My GitHub Profile →
+</a>
 
 </div>
 
-<h2>Featured Project</h2>
+<h2>Featured Projects</h2>
 
-<div class="project-container">
+<div class="projects-grid">
+
+<!-- PROJECT 1 -->
 
 <a href="https://github.com/anupamashaji99/Student-Follow-Up-Prioritisation-Enrolment-Support-Analytics"
    target="_blank"
    class="project-link">
 
-    <div class="card">
+<div class="card">
 
-        <img src="student_followup_dashboard.png"
-             alt="Student Follow-Up Prioritisation Dashboard"
-             class="project-image">
+<img src="student_followup_dashboard.png"
+     alt="Student Analytics Dashboard"
+     class="project-image">
 
-        <h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
+<h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
 
-        <p>
-            Inspired by my experience supporting student conversion processes, this project combines
-            SQL analysis, Power BI visualisation and predictive modelling to identify progression barriers,
-            workload drivers and students requiring prioritised follow-up support.
-        </p>
+<p>
+Analysed student progression and enrolment behaviour using SQL, Power BI and predictive modelling.
+Developed dashboards and machine learning models to identify progression barriers and students
+requiring prioritised intervention.
+</p>
 
-        <p>
-            <strong>Business Problem:</strong>
-            Student conversion teams manage large applicant pipelines and must prioritise follow-up
-            activities effectively. This project provides insights into progression patterns and
-            supports data-driven intervention strategies.
-        </p>
+<p>
+<strong>Key Insight:</strong>
+Applicants demonstrated the lowest progression rates, while progression outcomes declined significantly
+after repeated contact attempts.
+</p>
 
-        <p>
-            <strong>Key Findings:</strong>
-            T1 Enrolment generated the highest follow-up workload, applicants demonstrated the lowest
-            progression rates, and progression outcomes declined significantly after repeated contact attempts.
-        </p>
+<p>
+<strong>Tools:</strong>
+Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
+</p>
 
-        <p>
-            <strong>Tools:</strong>
-            Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
-        </p>
+<span class="view-button">View Case Study →</span>
 
-        <span class="view-button">
-            View Case Study →
-        </span>
+</div>
+</a>
 
-    </div>
+<!-- PROJECT 2 -->
 
+<a href="https://github.com/anupamashaji99/Public-Transport-Patronage-Recovery"
+   target="_blank"
+   class="project-link">
+
+<div class="card">
+
+<img src="transport_dashboard.png"
+     alt="Public Transport Dashboard"
+     class="project-image">
+
+<h3>🚆 Public Transport Patronage Recovery in Post-COVID Victoria</h3>
+
+<p>
+Investigated Victorian public transport patronage trends between 2018 and 2025 to understand
+travel behaviour changes following COVID-19 and assess demand recovery across transport modes.
+</p>
+
+<p>
+<strong>Key Insight:</strong>
+Patronage recovery varied significantly across transport modes and travel periods, highlighting
+lasting behavioural changes after the pandemic.
+</p>
+
+<p>
+<strong>Tools:</strong>
+Tableau, SQL, Data Visualisation
+</p>
+
+<span class="view-button">View Case Study →</span>
+
+</div>
+</a>
+
+<!-- PROJECT 3 -->
+
+<a href="https://github.com/anupamashaji99/ABR-Data-Quality-Assessment"
+   target="_blank"
+   class="project-link">
+
+<div class="card">
+
+<img src="abn_dashboard.png"
+     alt="ABR Data Quality Dashboard"
+     class="project-image">
+
+<h3>🏢 Australian Business Register Data Quality Assessment</h3>
+
+<p>
+Transformed large hierarchical XML datasets into reporting-ready tables using Power Query.
+Developed a Power BI dashboard to assess postcode completeness and identify data quality risks.
+</p>
+
+<p>
+<strong>Key Insight:</strong>
+A significant proportion of business records contained missing postcode information, creating
+potential risks for geographic reporting and segmentation.
+</p>
+
+<p>
+<strong>Tools:</strong>
+Power Query, XML, Power BI, Excel
+</p>
+
+<span class="view-button">View Case Study →</span>
+
+</div>
+</a>
+
+<!-- PROJECT 4 -->
+
+<a href="https://github.com/anupamashaji99/Student-Conversion-Prediction"
+   target="_blank"
+   class="project-link">
+
+<div class="card">
+
+<img src="machine_learning_dashboard.png"
+     alt="Predictive Modelling"
+     class="project-image">
+
+<h3>📊 Student Progression Prediction Model</h3>
+
+<p>
+Developed a Random Forest classification model to predict student progression outcomes using
+student engagement and operational data.
+</p>
+
+<p>
+<strong>Key Insight:</strong>
+The model achieved strong recall for identifying progressing students and highlighted the
+importance of follow-up priority, outstanding actions and contact attempts.
+</p>
+
+<p>
+<strong>Tools:</strong>
+Python, Pandas, Scikit-Learn, Machine Learning
+</p>
+
+<span class="view-button">View Case Study →</span>
+
+</div>
 </a>
 
 </div>
 
 <div class="skills">
 
-    <h2>Skills</h2>
+<h2>Technical Skills</h2>
 
-    <p>
-        SQL • Power BI • Python • Tableau • Excel • Power Query • DAX • Pandas •
-        Scikit-Learn • Data Quality Assessment • Business Analysis • Data Storytelling
-    </p>
+<p>
+<strong>Data Analytics:</strong>
+SQL, Power BI, Tableau, Excel, Power Query
+</p>
+
+<p>
+<strong>Programming:</strong>
+Python, Pandas, NumPy, Scikit-Learn
+</p>
+
+<p>
+<strong>Business Intelligence:</strong>
+DAX, Dashboard Development, KPI Reporting
+</p>
+
+<p>
+<strong>Analytics:</strong>
+Data Cleaning, EDA, Predictive Modelling,
+Data Quality Assessment, Data Storytelling
+</p>
 
 </div>
 
 </body>
 
 </html>
-```
-
