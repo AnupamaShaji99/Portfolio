@@ -659,3 +659,360 @@ PROJECT SECTION TITLE
     margin-bottom:70px;
 
 }
+
+/* =====================================
+   SKILLS SECTION
+===================================== */
+
+#skills{
+
+    padding:100px 70px;
+
+}
+
+.skills-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.skill-box{
+
+    background:rgba(255,255,255,.8);
+
+    backdrop-filter:blur(18px);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.skill-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+.skill-box h3{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+.skill-box p{
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+/* =====================================
+CONTACT
+===================================== */
+
+#contact{
+
+    text-align:center;
+
+    padding:100px 30px;
+
+}
+
+#contact h2{
+
+    font-size:40px;
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+
+}
+
+#contact p{
+
+    color:#555;
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+}
+
+.contact-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-links a{
+
+    background:white;
+
+    padding:18px 28px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.contact-links a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+.contact-links i{
+
+    margin-right:10px;
+
+}
+
+/* =====================================
+FOOTER
+===================================== */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+/* =====================================
+SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf4ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}
+
+/* =====================================
+MOBILE RESPONSIVE
+===================================== */
+
+@media(max-width:1000px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+nav{
+
+padding:18px 30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+padding:140px 25px 60px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+padding:40px 25px;
+
+}
+
+#projects{
+
+padding:80px 25px;
+
+}
+
+#skills{
+
+padding:80px 25px;
+
+}
+
+.about{
+
+padding:0 20px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.project-content h3{
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.logo{
+
+font-size:22px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero h2{
+
+font-size:19px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.contact-links{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.contact-links a{
+
+width:90%;
+
+}
+
+}
