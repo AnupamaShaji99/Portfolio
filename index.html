@@ -1,315 +1,545 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Anupama Shaji | Data Analytics Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <title>Anupama Shaji | Data Analytics Portfolio</title>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px;
-    line-height: 1.6;
-}
+    <!-- Google Font -->
 
-h1,h2 {
-    color: #1f4e79;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.intro {
-    margin-bottom: 40px;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 25px;
-}
+    <!-- Font Awesome -->
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-.project-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.project-image {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.view-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: #1f4e79;
-    color: white;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.skills {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    margin-top: 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.github-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #1f4e79;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.github-link:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 900px) {
-
-    body {
-        padding: 20px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="intro">
+<!-- ================= NAVBAR ================= -->
 
-<h1>Hi 👋</h1>
-<h1>I'm Anupama Shaji</h1>
+<nav>
+
+    <div class="logo">
+        AS
+    </div>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h3>Hello 👋 I'm</h3>
+
+        <h1>Anupama Shaji</h1>
+
+        <h2>
+            Business Analytics Graduate |
+            Data Analyst |
+            AI-Powered Analytics
+        </h2>
+
+        <p>
+
+            I build data-driven solutions that transform raw data into
+            meaningful business insights using SQL, PostgreSQL, Power BI,
+            Python and Generative AI.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn-primary">
+                View Projects
+            </a>
+
+            <a href="resume.pdf" class="btn-secondary" target="_blank">
+                Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <h2>4</h2>
+
+        <p>Projects</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>$24.9M</h2>
+
+        <p>Revenue Analysed</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>17,400+</h2>
+
+        <p>Customers Analysed</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>42%</h2>
+
+        <p>Profit Margin</p>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+<h2>About Me</h2>
 
 <p>
-Aspiring Data Analyst with experience in SQL, Power BI, Python, Tableau and Business Intelligence.
+
+I'm a Business Analytics graduate passionate about turning complex datasets
+into meaningful business decisions.
+
+I enjoy building SQL data warehouses, interactive dashboards,
+predictive analytics solutions and AI-powered decision support systems
+that solve real business problems.
+
 </p>
 
-<p>
-I develop data-driven solutions that transform raw data into actionable insights through analytics,
-dashboard development, predictive modelling and data storytelling.
-</p>
+</section>
 
-<a href="https://github.com/anupamashaji99"
-   target="_blank"
-   class="github-link">
-   View My GitHub Profile →
-</a>
+<!-- ================= PROJECTS ================= -->
 
-</div>
+<section id="projects">
 
-<h2>Featured Projects</h2>
+<h2 class="section-title">
+
+Featured Projects
+
+</h2>
 
 <div class="projects-grid">
 
-<!-- PROJECT 1 -->
-
-<a href="https://github.com/AnupamaShaji99/AI_Powered-Customer-Profitability-Executive-Analytics-Platform-"
-
-target="_blank"
-class="project-link">
+<!-- ================= PROJECT 1 ================= -->
 
 <div class="card">
 
-<img src="summary.png"
-  alt="AI Customer Profitability Dashboard"
-  class="project-image">
+<img src="summary.png" class="project-image">
 
-<h3>🤖 AI-Powered Customer Profitability & Executive Insights</h3>
+<div class="project-content">
 
-<p>
-Developed an end-to-end customer profitability analytics solution using PostgreSQL, SQL, Power BI and Streamlit. Built a dimensional data warehouse and analysed $24.9M revenue, $10.5M profit and 17,400+ customers through profitability analysis, Customer Lifetime Value (CLV) segmentation and RFM customer segmentation.
-</p>
+<span class="featured">
 
-<p>
-<strong>Key Insight:</strong>
-At-Risk customers represented the largest customer segment, while High Value customers accounted for only 25% of the customer base, highlighting significant retention and customer growth opportunities.
-</p>
+⭐ Featured Project
 
-<p>
-<strong>AI Capability:</strong>
-Implemented a Generative AI executive insights layer using Streamlit that automatically converts analytical outputs into executive summaries, business insights and strategic recommendations.
-</p>
+</span>
+
+<h3>
+
+AI-Powered Customer Profitability &
+Executive Insights Platform
+
+</h3>
 
 <p>
-<strong>Tools:</strong>
-PostgreSQL, SQL, Power BI, Python, Streamlit, Generative AI
+
+Designed an end-to-end customer profitability analytics platform using
+PostgreSQL, SQL, Power BI, Python and Streamlit.
+
+Built a dimensional data warehouse and analysed
+$24.9M revenue,
+$10.5M profit and
+17,400+ customers using profitability analysis,
+Customer Lifetime Value segmentation and
+RFM customer segmentation.
+
 </p>
 
-<span class="view-button">View Case Study →</span>
+<h4>Key Insight</h4>
+
+<p>
+
+At-Risk customers represented the largest customer segment while
+High Value customers accounted for only 25% of the customer base,
+revealing significant retention opportunities.
+
+</p>
+
+<div class="badges">
+
+<span>SQL</span>
+
+<span>PostgreSQL</span>
+
+<span>Power BI</span>
+
+<span>Python</span>
+
+<span>Streamlit</span>
+
+<span>OpenAI</span>
 
 </div>
 
+<a href="https://github.com/AnupamaShaji99/AI_Powered-Customer-Profitability-Executive-Analytics-Platform-"
+target="_blank"
+class="project-btn">
+
+View Case Study →
+
 </a>
 
+</div>
 
-<!-- PROJECT 2 -->
+</div>
 
-<a href="https://github.com/anupamashaji99/Student-Follow-Up-Prioritisation-Enrolment-Support-Analytics"
-   target="_blank"
-   class="project-link">
+<!-- ================= PROJECT 2 ================= -->
 
 <div class="card">
 
 <img src="student_followup_dashboard.png"
-     alt="Student Analytics Dashboard"
-     class="project-image">
+class="project-image">
 
-<h3>🎓 Student Follow-Up Prioritisation & Enrolment Support Analytics</h3>
+<div class="project-content">
 
-<p>
-Analysed student progression and enrolment behaviour using SQL, Power BI and predictive modelling.
-Developed dashboards and machine learning models to identify progression barriers and students
-requiring prioritised intervention.
-</p>
+<h3>
 
-<p>
-<strong>Key Insight:</strong>
-Applicants demonstrated the lowest progression rates, while progression outcomes declined significantly
-after repeated contact attempts.
-</p>
+Student Follow-Up Prioritisation &
+Enrolment Support Analytics
+
+</h3>
 
 <p>
-<strong>Tools:</strong>
-Power BI, SQL, Python, Pandas, Scikit-Learn, DAX
+
+Analysed student progression behaviour using SQL,
+Power BI and predictive modelling.
+
+Developed dashboards and machine learning models
+to identify students requiring prioritised intervention.
+
 </p>
 
-<span class="view-button">View Case Study →</span>
+<div class="badges">
+
+<span>SQL</span>
+
+<span>Power BI</span>
+
+<span>Python</span>
+
+<span>Pandas</span>
+
+<span>Scikit-Learn</span>
 
 </div>
+
+<a href="https://github.com/anupamashaji99/Student-Follow-Up-Prioritisation-Enrolment-Support-Analytics"
+
+target="_blank"
+
+class="project-btn">
+
+View Case Study →
+
 </a>
 
-<!-- PROJECT 3 -->
+</div>
 
-<a href="https://github.com/AnupamaShaji99/Public-Transport-Patronage-in-Post-COVID-Victoria"
-   target="_blank"
-   class="project-link">
+</div>
+
+<!-- ================= PROJECT 3 ================= -->
 
 <div class="card">
 
 <img src="Transport dashboard.png"
-     alt="Public Transport Dashboard"
-     class="project-image">
 
-<h3>🚆 Public Transport Patronage Recovery in Post-COVID Victoria</h3>
+class="project-image">
 
-<p>
-Investigated Victorian public transport patronage trends between 2018 and 2025 to understand
-travel behaviour changes following COVID-19 and assess demand recovery across transport modes.
-</p>
+<div class="project-content">
 
-<p>
-<strong>Key Insight:</strong>
-Patronage recovery varied significantly across transport modes and travel periods, highlighting
-lasting behavioural changes after the pandemic.
-</p>
+<h3>
+
+Public Transport Patronage Recovery
+in Post-COVID Victoria
+
+</h3>
 
 <p>
-<strong>Tools:</strong>
-Tableau, SQL, Data Visualisation
+
+Investigated Victorian transport recovery trends
+between 2018 and 2025
+using Tableau and SQL to identify long-term
+changes in commuter behaviour.
+
 </p>
 
-<span class="view-button">View Case Study →</span>
+<div class="badges">
+
+<span>SQL</span>
+
+<span>Tableau</span>
+
+<span>Data Visualisation</span>
 
 </div>
+
+<a href="https://github.com/AnupamaShaji99/Public-Transport-Patronage-in-Post-COVID-Victoria"
+
+target="_blank"
+
+class="project-btn">
+
+View Case Study →
+
 </a>
 
-<!-- PROJECT 4 -->
+</div>
 
-<a href="https://github.com/AnupamaShaji99/abn-data-quality-assessment"
-   target="_blank"
-   class="project-link">
+</div>
+
+<!-- ================= PROJECT 4 ================= -->
 
 <div class="card">
 
 <img src="abn data quality.png"
-     alt="ABR Data Quality Dashboard"
-     class="project-image">
 
-<h3>🏢 Australian Business Register Data Quality Assessment</h3>
+class="project-image">
 
-<p>
-Transformed large hierarchical XML datasets into reporting-ready tables using Power Query.
-Developed a Power BI dashboard to assess postcode completeness and identify data quality risks.
-</p>
+<div class="project-content">
 
-<p>
-<strong>Key Insight:</strong>
-A significant proportion of business records contained missing postcode information, creating
-potential risks for geographic reporting and segmentation.
-</p>
+<h3>
+
+Australian Business Register
+Data Quality Assessment
+
+</h3>
 
 <p>
-<strong>Tools:</strong>
-Power Query, XML, Power BI, Excel
+
+Transformed hierarchical XML datasets into
+reporting-ready tables using Power Query.
+
+Developed Power BI dashboards
+to assess postcode completeness and
+identify data quality risks.
+
 </p>
 
-<span class="view-button">View Case Study →</span>
+<div class="badges">
+
+<span>Power BI</span>
+
+<span>Power Query</span>
+
+<span>XML</span>
+
+<span>Excel</span>
 
 </div>
+
+<a href="https://github.com/AnupamaShaji99/abn-data-quality-assessment"
+
+target="_blank"
+
+class="project-btn">
+
+View Case Study →
+
 </a>
 
-
+</div>
 
 </div>
 
-<div class="skills">
+</div>
 
-<h2>Technical Skills</h2>
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<h2 class="section-title">
+
+Technical Skills
+
+</h2>
+
+<div class="skills-container">
+
+<div class="skill-box">
+
+<h3>Analytics</h3>
 
 <p>
-<strong>Data Analytics:</strong>
-SQL, Power BI, Tableau, Excel, Power Query
-</p>
 
-<p>
-<strong>Programming:</strong>
-Python, Pandas, NumPy, Scikit-Learn
-</p>
+SQL<br>
 
-<p>
-<strong>Business Intelligence:</strong>
-DAX, Dashboard Development, KPI Reporting
-</p>
+Power BI<br>
 
-<p>
-<strong>Analytics:</strong>
-Data Cleaning, EDA, Predictive Modelling,
-Data Quality Assessment, Data Storytelling
+Tableau<br>
+
+Excel<br>
+
+Power Query
+
 </p>
 
 </div>
+
+<div class="skill-box">
+
+<h3>Programming</h3>
+
+<p>
+
+Python<br>
+
+Pandas<br>
+
+NumPy<br>
+
+Scikit-Learn
+
+</p>
+
+</div>
+
+<div class="skill-box">
+
+<h3>Business Intelligence</h3>
+
+<p>
+
+Dashboard Development<br>
+
+DAX<br>
+
+KPI Reporting<br>
+
+Data Storytelling
+
+</p>
+
+</div>
+
+<div class="skill-box">
+
+<h3>AI</h3>
+
+<p>
+
+Streamlit<br>
+
+OpenAI API<br>
+
+Generative AI<br>
+
+Prompt Engineering
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2>
+
+Let's Connect
+
+</h2>
+
+<p>
+
+Interested in discussing analytics,
+business intelligence or AI projects?
+
+</p>
+
+<div class="contact-links">
+
+<a href="mailto:YOUR_EMAIL@gmail.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+Email
+
+</a>
+
+<a href="https://github.com/AnupamaShaji99"
+
+target="_blank">
+
+<i class="fab fa-github"></i>
+
+GitHub
+
+</a>
+
+<a href="https://www.linkedin.com/in/YOUR-LINK"
+
+target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+LinkedIn
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Anupama Shaji
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 
